@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+    padding: 25px;
+    height: 100vh;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 445px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+.advice-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: hsl(150, 100%, 66%);
+    width: fit-content;
+    margin: auto;
+}
+
+.advice-head h6 {
+    font-size: 18px;
+}
+
+.advice-number {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.advice-display {
+    word-wrap: break-word;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    margin: 20px;
+}
+
+.button-container {
+    border: 1px solid black;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    position: relative;
+    top: 55px;
+}
+
+.button-container:active {
+    transform: scale(0.95);
+}
+
+button {
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    display: block;
+    cursor: pointer;
+    margin: auto;
+}
+
+.error {
+    font-size: 10px;
+    width: max-content;
+    margin: auto;
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        max-width: 300px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin: auto;
+    }
+}
